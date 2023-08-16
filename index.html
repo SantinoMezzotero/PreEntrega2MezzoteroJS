@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!--css-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/descarga.jpg" type="image/x-icon">
+    </head>
+<body>
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="./pages/calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="mooney">
+        Cotizacion de Dolar ARGENTINA
+    </h1>
+    <form class="formulario">
+        <h3>Elija el dolar que desea conocer su valor:</h3>
+        <input type="radio" name="valor" id="uno">Dolar Oficial
+        <input type="radio" name="valor" id="dos">Dolar Blue
+        <h3>Ingrese el monto valuado en peso:</h3>
+        <input type="number" id="valor" min="1" max="1000000000">
+        <input type="button" id="cotizacion" value="cotizar" onclick="cambio()">
+    </form>
+
+
+    <div class="content">
+        <h1 class="title">Contactate con <span>Nosotros</span></h1>
+
+        <div class="contact-wrapper">
+        <div class="contact-form">
+            <h3>Contactanos</h3>
+                <form action="#">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label>Apellido</label>
+                        <input type="text" name="last-name">
+                    </p>
+                    <p>
+                        <label>Correo Electronico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i>(54)11 11 11 11</li>
+                    <li><i class="fa-solid fa-envelope"></i>dolares1234@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
